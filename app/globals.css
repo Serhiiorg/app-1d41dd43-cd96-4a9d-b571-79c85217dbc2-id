@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Base */
+    --background: 90 30% 97%;
+    --foreground: 210 30% 25%;
+
+    /* Card */
+    --card: 0 0% 100%;
+    --card-foreground: 210 30% 25%;
+
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 30% 25%;
+
+    /* Primary - Forest Green */
+    --primary: 122 45% 34%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - Light Green */
+    --secondary: 120 33% 64%;
+    --secondary-foreground: 210 30% 25%;
+
+    /* Muted */
+    --muted: 90 15% 90%;
+    --muted-foreground: 210 10% 40%;
+
+    /* Accent - Amber Warning */
+    --accent: 36 100% 50%;
+    --accent-foreground: 210 30% 25%;
+
+    /* Destructive - Soft Red */
+    --destructive: 0 65% 65%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Border, Input, Ring */
+    --border: 90 15% 85%;
+    --input: 90 15% 85%;
+    --ring: 122 45% 34%;
+
+    /* Functional Colors */
+    --success: 142 70% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 36 100% 50%;
+    --warning-foreground: 210 30% 25%;
+    --error: 0 65% 65%;
+    --error-foreground: 0 0% 100%;
+    --info: 200 85% 60%;
+    --info-foreground: 0 0% 100%;
+
+    /* Chart Colors */
+    --chart-1: 122 45% 34%;
+    --chart-2: 120 33% 64%;
+    --chart-3: 36 100% 50%;
+    --chart-4: 0 65% 65%;
+    --chart-5: 200 85% 60%;
+
+    /* Sidebar */
+    --sidebar-background: 120 15% 20%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 122 45% 34%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 120 33% 64%;
+    --sidebar-accent-foreground: 210 30% 25%;
+    --sidebar-border: 120 15% 30%;
+    --sidebar-ring: 122 45% 34%;
+
+    /* Border Radius */
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Merriweather", serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif;
+  }
+}
